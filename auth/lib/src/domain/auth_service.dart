@@ -3,5 +3,5 @@ import 'package:auth/src/domain/token.dart';
 
 abstract class IAuthService{
   Future <Result<Token>> signIn();
-  Future <void> signOut();
+  Future <Result<bool>> signOut(Token token);
 }

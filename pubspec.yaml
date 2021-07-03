@@ -23,15 +23,31 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  cubit: ^0.1.0
+  flutter_cubit: ^0.1.0
+  auth:
+    path: ./auth
+  restaurant:
+    path: ./restaurant
+  common:
+    path: ./common
+
 
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.0
-
+  equatable: ^1.2.4
+  flutter_svg: ^0.19.0
+  flutter_rating_bar: ^3.2.0+1
+  google_fonts: ^1.1.0
+  shared_preferences: ^0.5.12
+  transparent_image: ^1.0.0
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  faker: ^1.2.1
+  mockito: ^4.1.1
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
@@ -45,8 +61,8 @@ flutter:
   uses-material-design: true
 
   # To add assets to your application, add an assets section, like this:
-  # assets:
-  #   - images/a_dot_burr.jpeg
+  assets:
+     - assets/
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
